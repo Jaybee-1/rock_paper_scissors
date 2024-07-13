@@ -1,0 +1,72 @@
+*, *::before, *::after{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #946E83;
+}
+
+header{
+    background: #B4A6AB;
+    padding: 2rem;
+}
+
+h1{
+    text-align:center;
+    color: #333;
+}
+
+
+.selection{
+    background: none;
+    width: 10rem;
+    height: 10rem;
+    border: 10px solid white;
+    border-radius: 30%;
+    outline: none;
+    cursor: pointer;
+    font-size: 5rem;
+    transition: 100ms;
+    padding: 1rem 1rem;
+    margin: 2rem 2rem;
+}
+
+.selection:hover{
+    transform: scale(1.2);
+    background-color: #DDF8E8;
+}
+
+img{
+   width: 5rem;
+   height: 5rem;
+}
+
+.results{
+    margin-top: 1rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.result-score{
+    margin-left: 1rem;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.result-selection{
+    opacity: 0.5;
+}
+
+.result-selection.winner{
+    opacity: 1;
+    font-size: 2rem;
+}
